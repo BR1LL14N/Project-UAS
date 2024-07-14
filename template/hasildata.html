@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Data</title>
+    <link rel="stylesheet" href="/style/stylehasildata.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="card">
+            <figure>
+                <img src="static/iconuser.jpg" alt="User Photo">
+            </figure>
+            <div class="card-body">
+                <div class="title">Hasil Data</div>
+                <div class="content">
+                    <p><strong>Nama Lengkap:</strong> {{.NamaLengkap}}</p>
+                    <p><strong>Tanggal Lahir:</strong> {{.TanggalLahir}}</p>
+                    <p><strong>Jurusan:</strong> {{.Jurusan}}</p>
+                    <p><strong>Tahun Ajar:</strong> {{.TahunAjar}}</p>
+                    <p><strong>NPM:</strong> {{.NPM}}</p>
+                </div>
+                <div class="field">
+                    <a href="/logout" class="button">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

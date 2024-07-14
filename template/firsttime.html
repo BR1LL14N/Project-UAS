@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Time Login</title>
+    <link rel="stylesheet" href="/style/firsttime.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title">Silahkan Isi Data Anda Dibawah Ini</div>
+        <form method="post">
+            <div class="field">
+                <label>Jurusan</label>
+                <input type="text" name="jurusan" required>
+            </div>
+            <div class="field">
+                <label for="transfer">Apakah Anda Mahasiswa Transfer?</label>
+                <select name="transfer" id="transfer" class="formbold-form-select" required>
+                    <option value="iya">Iya</option>
+                    <option value="tidak">Tidak</option>
+                </select>
+            </div>
+            <div class="field">
+                <label>Tahun Ajar</label>
+                <input type="text" name="tahunAjar" required>
+            </div>
+            <div class="field">
+                <label>Tanggal Lahir</label>
+                <input type="date" name="tanggalLahir" required>
+            </div>
+            <div class="field">
+                <input type="submit" value="Submit" action="/firsttime">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
